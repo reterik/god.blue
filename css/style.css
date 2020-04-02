@@ -1,0 +1,287 @@
+<style>
+.Table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #f2f2f2;
+  font-size: 1rem;
+  margin: 0.5rem;
+  line-height: 1.5;
+}
+.Table-header {
+  display: none;
+}
+@media (min-width: 500px) {
+  .Table-header {
+    font-weight: 700;
+    background-color: #f2f2f2;
+  }
+}
+.Table-row {
+  width: 100%;
+}
+.Table-row:nth-of-type(even) {
+  background-color: #f2f2f2;
+  }
+.Table-row:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+@media (min-width: 500px) {
+  .Table-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .Table-row:nth-of-type(even) {
+    background-color: #ffffff;
+  }
+  .Table-row:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+}
+.Table-row-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+}
+.Table-row-item:before {
+  content: attr(data-header);
+  width: 30%;
+  font-weight: 700;
+}
+@media (min-width: 500px) {
+  .Table-row-item {
+    border: 1px solid #ffffff;
+    padding: 0.5em;
+  }
+  .Table-row-item:before {
+    content: none;
+  }
+}
+#search-box {
+position: relative;
+width: 100%;
+margin: 0;
+}
+
+#search-form 
+{
+height: 40px;
+border: 1px solid #999;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background-color: #fff;
+overflow: hidden;
+}
+
+#search-text 
+{
+font-size: 14px;
+color: #ddd;
+border-width: 0;
+background: transparent;
+}
+
+#search-box input[type="text"]
+{
+width: 90%;
+padding: 11px 0 12px 1em;
+color: #333;
+outline: none;
+}
+
+#search-button {
+position: absolute;
+top: 0;
+right: 0;
+height: 42px;
+width: 109px;
+font-size: 14px;
+color: #333;
+text-align: center;
+line-height: 42px;
+border-width: 0;
+background-color:#ColourCode;
+-webkit-border-radius: 0px 5px 5px 0px;
+-moz-border-radius: 0px 5px 5px 0px;
+border-radius: 0px 5px 5px 0px;
+cursor: pointer;
+}
+
+/*
+ * Define the widths: play around with these to get a best fit.
+ */
+/*
+ * Basic styles, good for a large display. Everything fits in
+ * one row, no wrapping. All text based cells grow equally.
+ */
+.table-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: no-wrap;
+  -webkit-flex-wrap: no-wrap;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrapper {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+}
+.text-4,
+.text-2,
+.text {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+.text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 20px;
+}
+.text {
+  width: 180px;
+}
+.num {
+  width: 80px;
+  text-align: right;
+}
+.img {
+  max-width:100%;
+  max-height:100%;
+object-fit:contain;
+}
+img {
+  max-width:100%;
+  max-height:100%;
+object-fit:contain;
+}
+/*
+ * Media queries: optimize for different screen widths.
+ */
+@media all and (max-width: 1100px) {
+  .text-2,
+  .num-2 {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .text-2 div,
+  .num-2 div {
+    flex-grow: 0;
+    -webkit-flex-grow: 0;
+    width: 100%;
+  }
+  .text-2 {
+    width: 180px;
+  }
+  .num-2 {
+    width: 80px;
+  }
+}
+@media all and (max-width: 580px) {
+  .text-4,
+  .num-4 {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .text-4 div,
+  .num-4 div {
+    flex-grow: 0;
+    -webkit-flex-grow: 0;
+    width: 100%;
+  }
+  .text-4 {
+    width: 180px;
+  }
+  .num-4 {
+    width: 80px;
+  }
+}
+@media all and (max-width: 320px) {
+  .table-row {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .table-row div {
+    flex-grow: 0;
+    -webkit-flex-grow: 0;
+    width: 100%;
+  }
+  .num {
+    text-align: left;
+  }
+}
+/*
+ * General good-look styles, not mandatory.
+ */
+body {
+  font-size: 20px;
+}
+.table-row {
+  border-bottom: 2px solid #e0e0e0;
+  border-collapse: collapse;
+  padding-top: 5px;
+}
+.table-row.header {
+  background-color: #FFEEDB;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* Some borders to show the behaviour. Uncomment to see it in action */
+/*
+.text-2, .num-2 {
+  border: 1px solid green;
+  padding: 2px;
+  margin: 2px;
+}
+
+.text-4, .num-4 {
+  border: 1px solid red;
+  margin: 2px;
+}
+*/
+.image {
+       max-width: 100%;
+       display: flex;
+       min-height: 207px;
+}
+.img {
+       max-width: 100%;
+       display: flex;
+       min-height: 207px;
+}
+</style>

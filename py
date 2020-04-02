@@ -1,0 +1,1 @@
+/home/reterik/Automatic-Question-Generator/

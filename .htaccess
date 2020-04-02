@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine On
+ErrorDocument 404 /index.php
+#Options -Indexes
+RewriteRule ^memberpage/(.*)/(.*)$ memberpage.php?mode=$1&generated=$2
+RewriteRule ^page/(.*)/(.*)$ page.php?mode=$1&generated=$2
+RewriteRule ^city/(.*)/(.*)$ city.php?mode=$1&generated=$2
+RewriteRule ^csv/(.*)/(.*)$ csv.php?mode=$1&generated=$2
+RewriteRule ^q/(.*)/(.*)$ q.php?mode=$1&generated=$2
+RewriteRule ^questions/(.*)/(.*)$ questions.php?mode=$1&generated=$2
+RewriteRule ^xml/(.*)/(.*)$ xml.php?mode=$1&generated=$2
+RewriteRule ^search/(.*)/(.*)$ search_auto.php?mode=$1&generated=$2
+
+RewriteRule ^brins/(.*)/(.*)$ brin.php?mode=$1&generated=$2
+RewriteRule ^xml/(.*)$ xml.php?mode=$1
+RewriteRule ^tags/(.*)/$ tags.php?search=$1
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^database\.xml$ database.php [L]
+RewriteRule ^amp/(.*)/(.*)$ amp.php?mode=$1&generated=$2
+

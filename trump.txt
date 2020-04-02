@@ -1,0 +1,1 @@
+/home/reterik/easy-deep-learning-with-AllenNLP/o.txt
