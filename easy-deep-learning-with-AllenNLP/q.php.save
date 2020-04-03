@@ -1,0 +1,102 @@
+<?php
+if(isset($_GET['search'])){
+$search = strip_tags(stripslashes($_GET['search']));
+}
+else
+{
+$search = $argv[1];
+}
+if(isset($_GET['date'])){
+$mysqldate = strip_tags(stripslashes($_GET['date']));
+$mysqldater = strip_tags(stripslashes($_GET['date']));
+$mysqldate = str_replace("-", "_", $mysqldate);
+}
+else
+{
+$mysqldate = date('Y-m-d');
+$mysqldate = str_replace("-", "_", $mysqldate);
+}
+
+if(isset($_GET['page'])){
+$page = strip_tags(stripslashes($_GET['page']));
+}
+else
+{
+$page = 0;
+}
+ini_set('max_execution_time', 0);
+ini_set('max_input_time', 0);
+include('/var/www/db.php');
+$conn = db_connect_100();
+error_reporting(0);
+$search = "biden";
+
+$query1 = "SELECT DISTINCT `title`, `description`, `url`, `counter` FROM `scraper`.`".$mysqldate."` WHERE (`".$mysqldate."`.`title` LIKE '%".$search."%' or `".$mysqldate."`.`description` LIKE '%".$search."%') LIMIT ".$page.", 10000;";
+
+        if ($stmt1 = mysqli_prepare($conn, $query1)) {
+                        mysqli_stmt_execute($stmt1);
+                mysqli_stmt_bind_result($stmt1, $title, $description, $url, $counter);
+                while (mysqli_stmt_fetch($stmt1)) {
+$title = str_replace(":", "", $title);
+$title = str_replace("'", "", $title);
+$title = str_replace("\"", "", $title);
+$title = str_replace(",", "", $title);
+$title = str_replace("	", "", $title);
+$title = str_replace("
+", "", $title);
+
+
+
+$description = str_replace(",", "", $description);
+$description = str_replace("\"", "", $description);
+$description = str_replace(":", "", $description);
+$description = str_replace("'", "", $description);
+$description = str_replace("	", "", $description);
+$description = str_replace("
+", "", $description);
+$description = strip_tags(stripslashes($description));
+
+
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"how is trump doing it?\"}\r"; 
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"where is trump doing it?\"}\r"; 
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"why is trump doing it?\"}\r"; 
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"when is trump doing it?\"}\r"; 
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"is trump is really doing it?\"}\r"; 
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"who is trump doing it with?\"}\r"; 
+//echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"if what trump is doing is true?\"}\r";
+
+
+$sys = "python3 /home/reterik/Automatic-Question-Generator/AutomaticQuestionGenerator/main.py inputText \"".$title." ".$description."\"";
+$out = shell_exec($sys);
+
+
+
+/*
+$pattern = "/^.*\?$/";
+$match = preg_match($pattern, $out);
+echo $match;
+*/
+//$test = preg_match_all('/(Q-.*\?$)/', $out, $match);
+$test = preg_match_all('/(?J)(?<match>:)|(.*)|(?<match>\?)/', $out, $match);
+
+foreach($match as $matches => $value) {
+	foreach($value as $val) {
+		$strings = strpos($val, "Q-");
+	//	echo $strings;
+		if(strpos($val, "Q-") !== false) {
+	//		echo $val;
+			echo "{\"passage\": \"".$title." ".$description."\", \"question\": \"".$val."\"}\r"; 
+		}
+	}
+}
+//print_r($test);
+
+//	$file_folder_name_search = "/home/reterik/Automatic-Question-Generator/AutomaticQuestionGenerator/DB/db.txt";
+//	$lfhandler = fopen($file_folder_name_search, "w");
+//	fwrite($lfhandler, $conCats);
+//	fclose ($lfhandler);
+
+
+		}
+	}
+?>

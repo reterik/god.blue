@@ -1,0 +1,317 @@
+ 
+
+
+----Dataset Statistics----
+
+Statistics for text.tokens_length:
+	Lengths: Mean: 334.66798196166854, Standard Dev: 666.378207274537, Max: 12478, Min: 24
+Statistics for text.num_tokens:
+	Lengths: Mean: 334.66798196166854, Standard Dev: 666.378207274537, Max: 12478, Min: 24
+
+10 Random instances: 
+Instance 3223:
+	Instance with fields:
+ 	 text: TextField of length 137 with text: 
+ 		[From, :, dsnyder@falcon.aamrl.wpafb.af.mil, Subject, :, Re, :, Real, Time, Graphics, ?, ?,
+		Distribution, :, na, Organization, :, USAF, AL, /, CFH, ,, WPAFB, ,, Dayton, ,, OH, Lines, :, 27,
+		In, article, <, 1993Apr5.114428.2061@falcon.aamrl.wpafb.af.mil, >, ,,
+		dsnyder@falcon.aamrl.wpafb.af.mil, writes, :, >, In, article, <, C4vA9r.KK7@taurus.cs.nps.navy.mil,
+		>, ,, stockel@oahu.oc.nps.navy.mil, (, Jim, Stockel, ), writes, :, >, >, Hi, ,, >, >, >, >, Opps, !,
+		typed, in, the, phone, numbers, wrong, ., Here, are, the, correct, numbers, ., >, >, For, a,
+		commerical, package, try, WAVE, from, Precision, Visuals, 303, -, 530, -, 9000, >, >, For, a, free,
+		package, try, KHOROS, from, University, of, New, Mexico, 505, -, 277, -, 6563, >, ftp, from, >,
+		ptrg.eece.unm.edu, >, >, Login, in, anonyomus, or, ftp, with, a, valid, email, address, as, the,
+		password, >, cd, /pub, /, khoros, /, release]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 0 in namespace: 'labels'.' 
+
+Instance 189:
+	Instance with fields:
+ 	 text: TextField of length 246 with text: 
+ 		[From, :, joachim@kih.no, (, joachim, lous, ), Subject, :, Re, :, XV, for, MS, -, DOS, !, !, !,
+		Organization, :, Kongsberg, Ingeniorhogskole, Lines, :, 20, NNTP, -, Posting, -, Host, :,
+		samson.kih.no, X, -, Newsreader, :, TIN, [, version, 1.1, PL8, ], NOE-MAILADDRESS@eicn.etna.ch,
+		wrote, :, >, I, 'm, sorry, for, ..., >, 1, ), The, late, of, the, answer, but, I, could, n't, find,
+		xv221, for, msdos, 'cause, >, I, forgot, the, address, ..., but, I, 've, retrieve, it, .., >, 2, ),
+		Posting, this, answer, here, in, comp.graphics, 'cause, I, ca, n't, use, e, -, mail, ,, >, ^^^, not,
+		yet, ...., >, 2, ), My, bad, english, 'cause, I, 'm, a, Swiss, and, my, language, is, french, ....,
+		^^^, If, french, is, your, language, ,, try, counting, in, french, in, stead, ,, maybe, it, will,
+		work, better, ...., :-), _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _,
+		_, _, _, _, _, _, /, _, L, *, /, _, /, ., /, _, /, _, ", One, thing, is, for, sure, :, The, sheep,
+		/, _, ), /()(/(/)//, ), ), /, _, (, ), (, /, _, ), /, /, Is, NOT, a, creature, of, the, earth, ., ",
+		/, \_)~, (, /, Joachim@kih.no, /, /, /_______________________________/, /, -The, back, -, masking,
+		on, ', Haaden, II, ', /_______________________________/, from, ', Exposure, ', by, Robert, Fripp, .]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 0 in namespace: 'labels'.' 
+
+Instance 860:
+	Instance with fields:
+ 	 text: TextField of length 487 with text: 
+ 		[From, :, dpage@ra.csc.ti.com, (, Doug, Page, ), Subject, :, Re, :, Quaint, US, Archaisms, Nntp, -,
+		Posting, -, Host, :, ra, Organization, :, Texas, Instruments, Lines, :, 41, In, article, <,
+		C512wC.B0M.1@cs.cmu.edu, >, ,, nickh@CS.CMU.EDU, (, Nick, Haines, ), writes, :, |, >, In, article,
+		<, 1993Apr2.170157.24251@ke4zv.uucp, >, gary@ke4zv.uucp, (, Gary, Coffman, ), writes, :, |, >, <,
+		stuff, deleted, >, |, >, Of, course, the, units, of, force, have, the, same, names, as, those, of,
+		weight, ,, |, >, but, in, order, to, use, them, you, need, to, keep, useful, constants, like, the,
+		|, >, omnipresent, 32, ., ?, ?, ?, ?, ft, /, sec^2, around, ., |, >, |, >, Maybe, you, 'd, like, to,
+		go, over, again, how, this, system, is, _, so, _, natural, and, |, >, _, so, _, easy, to, use, ,,
+		Gary, ?, While, you, 're, at, it, ,, you, can, figure, out, for, us, |, >, the, weight, of, 17,
+		barrels, and, a, quart, of, foo, (, density, 17, lb, 2, 3/4, oz, per, |, >, cubic, foot, ), on, the,
+		moon, (, gravity, 5, ft, 7, 3/32, in, /, sec^2, ), ., Let, 's, face, it, ,, |, >, even, the,
+		imperial, system, uses, a, basically, metric, way, of, relating, |, >, quantities, (, i.e., that,
+		would, be, written, as, 5.59, ft, /, sec^2, ), ;, the, only, |, >, thing, you, 're, hanging, on, to,
+		is, the, right, to, express, the, same, quantity, |, >, as, 1731, inches, ,, 144.25, feet, ,,
+		48.0833, yards, or, 2.186, chains, ., What, |, >, everyone, else, is, saying, is, _, why, _, do,
+		you, want, to, do, that, ?, |, >, |, >, Any, apparent, remaining, complexity, in, the, SI, system,
+		is, due, to, the, |, >, multiplicity, of, the, aforesaid, prefixes, ., In, fact, what, 's, going,
+		on, (, and, |, >, the, fundamental, difference, between, SI, and, imperial, ), is, that, you, have,
+		|, >, exactly, one, unit, of, each, type, ,, and, all, values, of, that, type, are, |, >, expressed,
+		as, some, multiple, of, the, unit, ., You, mean, like, :, seconds, ,, minutes, ,, hours, ,, days, ,,
+		months, ,, years, ., ., ., :-), Remember, ,, the, Fahrenheit, temperature, scale, is, also, a,
+		centigrade, scale, ., Some, revisionists, tell, the, history, something, like, this, :, The,
+		coldest, point, in, a, particular, Russian, winter, was, marked, on, the, thermometer, as, was, the,
+		body, temperature, of, a, volunteer, (, turns, out, he, was, sick, ,, but, you, ca, n't, win, 'em,
+		all, ), ., Then, the, space, in, between, the, marks, on, the, thermometer, was, then, divided,
+		into, hundredths, ., :-), FWIW, ,, Doug, Page, *, *, *, The, opinions, are, mine, (, maybe, ), ,,
+		and, do, not, necessarily, represent, those, *, *, *, *, *, *, of, my, employer, (, or, any, other,
+		sane, person, ,, fot, that, matter, ), ., *, *, *]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 2 in namespace: 'labels'.' 
+
+Instance 1256:
+	Instance with fields:
+ 	 text: TextField of length 86 with text: 
+ 		[From, :, dietz@cs.rochester.edu, (, Paul, Dietz, ), Subject, :, Re, :, Terraforming, Venus, :, can,
+		it, be, done, ", cheaply, ", ?, Organization, :, University, of, Rochester, Lines, :, 9, Would,
+		someone, please, send, me, James, Oberg, 's, email, address, ,, if, he, has, one, and, if, someone,
+		reading, this, list, knows, it, ?, I, wanted, to, send, him, a, comment, on, something, in, his,
+		terraforming, book, ., Paul, F., Dietz, dietz@cs.rochester.edu, Potential, explosive, yield, of,
+		the, annual, global, production, of, borax, :, 5, million, megatons]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 2 in namespace: 'labels'.' 
+
+Instance 3239:
+	Instance with fields:
+ 	 text: TextField of length 121 with text: 
+ 		[From, :, drickel@bounce.mentorg.com, (, Dave, Rickel, ), Subject, :, Re, :, Quaint, US, Archaisms,
+		Article, -, I.D., :, news.1993Apr06.090626.21880, Organization, :, Mentor, Graphics, Lines, :, 14,
+		Originator, :, drickel@bounce, Nntp, -, Posting, -, Host, :, bounce.mentorg.com, In, article, <,
+		C512wC.B0M.1@cs.cmu.edu, >, ,, nickh@CS.CMU.EDU, (, Nick, Haines, ), writes, :, |, >, Oh, ,, and,
+		the, other, advantage, is, that, you, do, n't, have, shit, constants, like, |, >, 32, ., ?, ?, ?,
+		hanging, around, ., No, ,, instead, you, have, stupid, things, like, 3600, and, 86400, and,
+		31556925.9747, and, 299792.458, and, 9.80665, and, ..., How, many, cc, 's, in, a, ml, anyway, ?,
+		The, metric, system, has, its, problems, ,, just, not, as, many, of, them, ., david, rickel,
+		drickel@sjc.mentorg.com]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 2 in namespace: 'labels'.' 
+
+Instance 1497:
+	Instance with fields:
+ 	 text: TextField of length 204 with text: 
+ 		[From, :, highlndr@ux1.cso.uiuc.edu, (, The, Highlander, ), Subject, :, Re, :, TIFF, :,
+		philosophical, significance, of, 42, Organization, :, University, of, Illinois, at, Urbana, Lines,
+		:, 23, cptully@med.unc.edu, (, Christopher, P., Tully, ,, Pathology,62699, ), writes, :, >, Why, so,
+		up, tight, ?, FOr, that, matter, ,, TIFF6, is, out, now, ,, so, why, not, gripe, >, about, its,
+		problems, ?, Also, ,, if, its, so, important, to, you, ,, volunteer, to, >, help, define, or,
+		critique, the, spec, ., HEAR, HEAR, !, !, !, >, Finally, ,, a, little, numerology, :, 42, is, 24,
+		backwards, ,, and, TIFF, is, a, 24, bit, >, image, format, ..., REALLY, ?, i, thought, that, the,
+		reason, it, was, 42, was, that, it, is, REALLY, 24, ,, but, written, as, 42, so, that, on, Intel,
+		chips, you, could, get, the, proper, value, :), -pete, help, stomp, out, the, endian, wars, ...,
+		break, some, eggs, on, their, sides, !, --, Peter, Mueller, (, TheBishop, ), |, When, a, person,
+		commits, a, violation, and, sins, highlndr@ux1.cso.uiuc.edu, |, unintentionally, in, regard, to,
+		any, of, the, pmueller@mrcnext.cso.uiuc.edu, |, Lord, 's, holy, things, ,, he, is, to, bring, to,
+		the, |, Lord, as, a, penalty, ,, a, ram, from, the, flock, ...]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 0 in namespace: 'labels'.' 
+
+Instance 2727:
+	Instance with fields:
+ 	 text: TextField of length 538 with text: 
+ 		[From, :, ab@nova.cc.purdue.edu, (, Allen, B, ), Subject, :, Re, :, Fractals, ?, what, good, are,
+		they, ?, Organization, :, Purdue, University, Lines, :, 51, In, article, <, 7155@pdxgate, ., UUCP,
+		>, idr@rigel.cs.pdx.edu, (, Ian, D, Romanick, ), writes, :, >, One, thing, :, a, small, change, in,
+		initial, conditions, can, cause, a, huge, >, change, in, final, conditions, ., There, are, certain,
+		things, about, the, way, >, the, plate, tektoniks, and, volcanic, activity, effect, a, land, scape,
+		that, >, is, ,, while, not, entirely, random, ,, unpredictable, ., This, is, also, true, with, >,
+		fractals, ,, so, one, could, also, conclude, that, you, could, model, this, >, fractally, ., Yeah,
+		,, and, it, 's, also, true, most, long, complicated, sequences, of, events, ,, calculations, ,, or,
+		big, computer, programs, in, general, ., I, do, n't, argue, that, you, can, get, similar, and,
+		maybe, useful, results, from, fractals, ,, I, just, question, whether, you, >, should<., The,
+		fractal, fiends, seem, to, be, saying, that, any, part, of, a, system, that, we, ca, n't, model,
+		should, be, replaced, with, a, random, number, generator, ., That, has, been, useful, ,, for,
+		instance, ,, in, making, data, more, palatable, to, human, perception, or, for, torture, testing,
+		the, rest, of, the, system, ,, but, I, do, n't, think, it, has, much, to, do, with, fractals, ,,
+		and, I, certainly, would, rather, that, the, model, be, improved, in, a, more, explicable, manner,
+		., I, guess, I, just, have, n't, seen, all, these, earth, -, shaking, fractal, models, that,
+		explain, and, correlate, to, the, universe, as, it, actually, exists, ., I, really, hope, I, do, ,,
+		but, I, 'm, not, holding, my, self, -, similar, breath, ., >, There, is, one, other, thing, that,
+		fractals, are, good, for, :, fractal, >, image, compression, ., Uh, huh, ., I, 'll, believe, it,
+		when, I, see, it, ., I, 've, been, chasing, fractal, compression, for, a, few, years, ,, and, I,
+		still, do, n't, believe, in, it, ., If, it, 's, so, great, ,, how, come, we, do, n't, see, it,
+		competing, with, JPEG, ?, 'Cause, it, ca, n't, ,, I, 'll, wager, ., Actually, ,, I, have, wagered,
+		,, I, quit, trying, to, make, fractal, compression, work-, and, I, was, trying-, because, I, do,
+		n't, think, it, 's, a, reasonable, alternative, to, other, techniques, ., It, is, neat, ,, though,
+		., :-), I, 'll, reiterate, my, disbelief, that, everything, is, fractal, ., That, 's, why, I, do,
+		n't, think, fractal, compression, as, it, is, widely, explained, is, practical, ., I, know,
+		Barnsley, and, Sloan, have, some, tricks, up, their, sleeves, that, make, their, demos, work, ,,
+		but, I, do, n't, see, anyone, using, it, in, a, real, product, ., It, 's, been, six, years, since,
+		Iterated, Systems, was, formed, ,, right, ?, ", There, are, always, going, to, be, questions, until,
+		there, 's, a, product, out, there, ,, ", Sloan, replies, ., The, company, plans, to, ship, its,
+		first, encoding, devices, in, the, summer, ,, he, says, ., In, March, ,, Iterated, Systems, will,
+		have, the, other, half, of, the, system, :, the, decoders, ., -, Scientific, American, ,, March,
+		1990, ,, page, 77, Allen, B, (, Do, n't, even, get, me, started, :-), )]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 0 in namespace: 'labels'.' 
+
+Instance 2394:
+	Instance with fields:
+ 	 text: TextField of length 239 with text: 
+ 		[From, :, mccall@mksol.dseg.ti.com, (, fred, j, mccall, 575, -, 3539, ), Subject, :, Re, :, Why,
+		DC-1, will, be, the, way, of, the, future, ., Organization, :, Texas, Instruments, Inc, Lines, :,
+		22, In, <, 1r6ub0$mgl@access.digex.net, >, prb@access.digex.com, (, Pat, ), writes, :, >, In,
+		article, <, 1993Apr22.164801.7530@julian.uwo.ca, >, jdnicoll@prism.ccs.uwo.ca, (, James, Davis,
+		Nicoll, ), writes, :, >, >, Hmmm, ., I, seem, to, recall, that, the, attraction, of, solid, state,
+		record-, >, >, players, and, radios, in, the, 1960s, was, n't, better, performance, but, lower, >,
+		>, per, -, unit, cost, than, vacuum, -, tube, systems, ., >, >, >, I, do, n't, think, so, at, first,
+		,, but, solid, state, offered, better, reliabity, ,, >, i, d, bet, ,, and, any, lower, costs, would,
+		be, only, after, the, processes, really, scaled, up, ., Careful, ., Making, statements, about, how,
+		solid, state, is, (, generally, ), more, reliable, than, analog, will, get, you, a, nasty, follow,
+		-, up, from, Tommy, Mac, or, Pat, ., Wait, a, minute, ;, you, *, are, *, Pat, ., Pleased, to, see,
+		that, you, 're, not, suffering, from, the, bugaboos, of, a, small, mind, ., ;-), --, ", Insisting,
+		on, perfect, safety, is, for, people, who, do, n't, have, the, balls, to, live, in, the, real,
+		world, ., ", --, Mary, Shafer, ,, NASA, Ames, Dryden,
+		------------------------------------------------------------------------------,
+		Fred.McCall@dseg.ti.com, -, I, do, n't, speak, for, others, and, they, do, n't, speak, for, me, .]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 2 in namespace: 'labels'.' 
+
+Instance 1906:
+	Instance with fields:
+ 	 text: TextField of length 1095 with text: 
+ 		[From, :, baalke@kelvin.jpl.nasa.gov, (, Ron, Baalke, ), Subject, :, Galileo, Update, -, 04/15/93,
+		Organization, :, Jet, Propulsion, Laboratory, Lines, :, 113, Distribution, :, world, NNTP, -,
+		Posting, -, Host, :, kelvin.jpl.nasa.gov, Keywords, :, Galileo, ,, JPL, News, -, Software, :, VAX,
+		/, VMS, VNEWS, 1.41, Forwarded, from, Neal, Ausman, ,, Galileo, Mission, Director, GALILEO, MISSION,
+		DIRECTOR, STATUS, REPORT, POST, -, LAUNCH, April, 9, -, 15, ,, 1993, SPACECRAFT, 1, ., On, April, 9,
+		,, real, -, time, commands, were, sent, ,, as, planned, ,, to, reacquire, celestial, reference,
+		after, completion, of, the, Low, Gain, Antenna, (, LGA-2, ), swing, /, Dual, Drive, Actuator, (,
+		DDA, ), hammer, activities, ., 2, ., On, April, 9, ,, the, EJ-1, (, Earth, -, Jupiter, #, 1, ),
+		sequence, memory, load, was, uplinked, to, the, spacecraft, without, incident, ., This, sequence,
+		covers, spacecraft, activity, from, April, 12, ,, 1993, to, June, 14, ,, 1993, and, includes, a,
+		window, for, the, Radio, Relay, Antenna, (, RRA, ), slew, test, on, April, 28, ,, 1993, ., The,
+		command, loss, timer, was, set, to, 11, days, as, a, part, of, this, sequence, memory, load, ., 3,
+		., On, April, 12, and, 15, ,, a, NO, -, OP, command, was, sent, to, reset, the, command, loss,
+		timer, to, 264, hours, ,, its, planned, value, during, this, mission, phase, ., 4, ., On, April, 12,
+		,, cruise, science, Memory, Readouts, (, MROs, ), were, performed, for, the, Extreme, Ultraviolet,
+		Spectrometer, (, EUV, ), ,, Dust, Detector, (, DDS, ), ,, and, Magnetometer, (, MAG, ), instruments,
+		., Preliminary, analysis, indicates, the, data, was, received, properly, ., 5, ., On, April, 12, ,,
+		an, Ultra, -, Stable, Oscillator, (, USO, ), test, was, performed, to, verify, the, health, status,
+		of, the, USO, and, to, collect, gravitational, red, shift, experiment, data, ;, long, term, trend,
+		analysis, is, continuing, ., 6, ., On, April, 14, ,, a, 40bps, modulation, index, test, was,
+		performed, to, determine, the, optimal, Signal, -, to, -, Noise, Ratio, (, SNR, ), when,
+		transmitting, at, 40bps, ., Preliminary, analysis, of, the, data, suggests, that, the, present, pre,
+		-, launch, selected, modulation, index, is, near, the, optimal, level, ., 7, ., On, April, 15, ,,
+		cruise, science, Memory, Readouts, (, MROs, ), were, performed, for, the, Extreme, Ultraviolet,
+		Spectrometer, (, EUV, ), and, Magnetometer, (, MAG, ), instrument, ., Preliminary, analysis,
+		indicates, the, data, was, received, properly, ., 8, ., On, April, 15, ,, a, periodic, RPM, (,
+		Retro, -, Propulsion, Module, ), 10-Newton, thruster, flushing, maintenance, activity, was,
+		performed, ;, all, 12, thrusters, were, flushed, during, the, activity, ., Thruster, performance,
+		throughout, the, activity, was, nominal, ., 9, ., The, AC, /, DC, bus, imbalance, measurements,
+		have, not, exhibited, significant, changes, (, greater, than, 25, DN, ), throughout, this, period,
+		., The, AC, measurement, reads, 19, DN, (, 4.3, volts, ), ., The, DC, measurement, reads, 111, DN,
+		(, 12.9, volts, ), ., These, measurements, are, consistent, with, the, model, developed, by, the,
+		AC, /, DC, special, anomaly, team, ., 10, ., The, Spacecraft, status, as, of, April, 15, ,, 1993, ,,
+		is, as, follows, :, a, ), System, Power, Margin, -, 60, watts, b, ), Spin, Configuration, -, Dual,
+		-, Spin, c, ), Spin, Rate, /, Sensor, -, 3.15rpm, /, Star, Scanner, d, ), Spacecraft, Attitude, is,
+		approximately, 18, degrees, off, -, sun, (, lagging, ), and, 6, degrees, off, -, earth, (, leading,
+		), e, ), Downlink, telemetry, rate, /, antenna-, 40bps(coded)/LGA-1, f, ), General, Thermal,
+		Control, -, all, temperatures, within, acceptable, range, g, ), RPM, Tank, Pressures, -, all,
+		within, acceptable, range, h, ), Orbiter, Science-, Instruments, powered, on, are, the, PWS, ,, EUV,
+		,, UVS, ,, EPD, ,, MAG, ,, HIC, ,, and, DDS, i, ), Probe, /, RRH, -, powered, off, ,, temperatures,
+		within, acceptable, range, j, ), CMD, Loss, Timer, Setting, -, 264, hours, Time, To, Initiation, -,
+		260, hours, GDS, (, Ground, Data, Systems, ), :, 1, ., Galileo, participated, in, a, second, DSN, (,
+		Deep, Space, Network, ), acceptance, test, for, the, DSN, Telemetry, Phase, 3, Upgrade, on, April,
+		13, ,, 1993, ,, using, CTA-21, (, Compatibility, Test, Area, 21, ), ., The, purpose, of, this, test,
+		was, to, verify, the, flow, of, Galileo, telemetry, data, through, the, new, Telemetry, Group,
+		Controller, (, TGC, ), and, the, Telemetry, Channel, Assembly, (, TCA, ), ., The, TGC, /, TCA, is,
+		the, replacement, for, the, current, Telemetry, Processing, Assembly, (, TPA, ), ., Seven,
+		different, telemetry, rates, were, run, for, this, test, ;, all, ran, well, on, both, the, MTS, (,
+		MCCC, Telemetry, Subsystem, ), and, the, AMMOS, MGDS, V18.0, GIF, with, the, exception, of, 10bps,
+		., The, 10bps, rate, had, some, trouble, staying, in, lock, ;, it, appears, the, TGC, /, TCA, was,
+		not, metering, the, data, correctly, ., Further, comparisons, between, the, MGDS, and, MTS, data,
+		from, this, test, are, being, conducted, ., MVT, (, Mission, Verification, Test, ), of, the, TGC, /,
+		TCA, system, is, expected, to, begin, May, 16, ,, 1993, ., TRAJECTORY, As, of, noon, Thursday, ,,
+		April, 15, ,, 1993, ,, the, Galileo, Spacecraft, trajectory, status, was, as, follows, :, Distance,
+		from, Earth, 152,606,000, km, (, 1.02, AU, ), Distance, from, Sun, 277,519,800, km, (, 1.86, AU, ),
+		Heliocentric, Speed, 93,400, km, per, hour, Distance, from, Jupiter, 543,973,900, km, Round, Trip,
+		Light, Time, 17, minutes, ,, 4, seconds, SPECIAL, TOPIC, 1, ., As, of, April, 15, ,, 1993, ,, a,
+		total, of, 70184, real, -, time, commands, have, been, transmitted, to, Galileo, since, Launch, .,
+		Of, these, ,, 65076, were, initiated, in, the, sequence, design, process, and, 5108, initiated, in,
+		the, real, -, time, command, process, ., In, the, past, week, ,, 7, real, time, commands, were,
+		transmitted, :, 6, were, initiated, in, the, sequence, design, process, and, one, initiated, in,
+		the, real, time, command, process, ., Major, command, activities, included, commands, to, reacquire,
+		celestial, reference, ,, uplink, the, EJ-1, sequence, memory, load, ,, and, reset, the, command,
+		loss, timer, ., _, _, _, _, _, _, _, _, _, _, _, /, _, /|, /____/, \, /, _, /|, Ron, Baalke, |,
+		baalke@kelvin.jpl.nasa.gov, |, |, |, |, _, _, \, /|, |, |, |, Jet, Propulsion, Lab, |, _, _, _, |,
+		|, |, |, |, _, _, ), |/, |, |, |, _, _, M, /, S, 525, -, 3684, Telos, |, Being, cynical, never,
+		helps, /___|, |, |, |, _, _, _, /, |, |/, _, _, /|, Pasadena, ,, CA, 91109, |, to, correct, the,
+		situation, |_____|/, |_|/, |_____|/, |, and, causes, more, aggravation, |, instead, .]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 2 in namespace: 'labels'.' 
+
+Instance 82:
+	Instance with fields:
+ 	 text: TextField of length 164 with text: 
+ 		[From, :, tholen@galileo.ifa.hawaii.edu, (, Dave, Tholen, ), Subject, :, Re, :, New, planet, /,
+		Kuiper, object, found, ?, Organization, :, University, of, Hawaii, Distribution, :, sci, Lines, :,
+		18, Francisco, da, Fonseca, Rodrigues, writes, :, >, Tonigth, a, TV, journal, here, in, Brasil,
+		announced, that, an, object, ,, >, beyond, Pluto, 's, orbit, ,, was, found, by, an, observatory, at,
+		Hawaii, ., They, >, named, the, object, Karla, ., The, name, is, a, working, name, only, ;, quite,
+		unofficial, ., The, formal, designation, is, 1993, FW, ., >, The, program, said, the, object, was,
+		n't, a, gaseous, giant, planet, ,, and, >, should, be, composed, by, rocks, and, ices, ., >, >, Can,
+		someone, confirm, these, information, ?, Could, this, object, be, a, >, new, planet, or, a, Kuiper,
+		object, ?, It, 's, most, likely, a, Kuiper, Belt, object, ,, with, an, estimated, diameter, of, 290,
+		km, ., The, orbit, has, n't, been, determined, well, enough, yet, to, say, much, more, about, it, .]
+ 		and TokenIndexers : {'tokens': 'SingleIdTokenIndexer'} 
+ 	 label: LabelField with label: 2 in namespace: 'labels'.' 
+
+
+
+----Vocabulary Statistics----
+
+
+Top 10 most frequent tokens in namespace 'tokens':
+	Token: ,		Frequency: 43812
+	Token: .		Frequency: 39286
+	Token: the		Frequency: 32078
+	Token: :		Frequency: 30998
+	Token: >		Frequency: 26724
+	Token: =		Frequency: 20324
+	Token: -		Frequency: 18740
+	Token: )		Frequency: 17654
+	Token: to		Frequency: 17344
+	Token: of		Frequency: 17012
+
+Top 10 longest tokens in namespace 'tokens':
+	Token: news1.cis.umn.edu!umn.edu!news-feed-1.peachnet.edu!gatech!concert!duke!news.duke.edu!bchm.biochem.duke.edu		length: 106	Frequency: 2
+	Token: egsner!ernest!m2.dseg.ti.com!tilde.csc.ti.com!mksol!kerr.dseg.ti.com!kkerr@mkcase1.dseg.ti.com		length: 94	Frequency: 2
+	Token: --------------------------------------------------------------------------------		length: 80	Frequency: 18
+	Token: -------------------------------------------------------------------------------		length: 79	Frequency: 104
+	Token: -------------------------------ching@wpi.wpi.edu-------------------------------		length: 79	Frequency: 4
+	Token: /*****************************************************************************/		length: 79	Frequency: 4
+	Token: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~		length: 79	Frequency: 4
+	Token: |_____________________________________________________________________________|		length: 79	Frequency: 2
+	Token: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-		length: 79	Frequency: 2
+	Token: /----------------------------oOO--(_)--OOo------------------------------------\		length: 79	Frequency: 2
+
+Top 10 shortest tokens in namespace 'tokens':
+	Token: »		length: 1	Frequency: 2
+	Token: þ		length: 1	Frequency: 4
+	Token: Ñ		length: 1	Frequency: 6
+	Token: k		length: 1	Frequency: 12
+	Token: º		length: 1	Frequency: 18
+	Token: ~		length: 1	Frequency: 20
+	Token: h		length: 1	Frequency: 20
+	Token: l		length: 1	Frequency: 22
+	Token: w		length: 1	Frequency: 34
+	Token: T		length: 1	Frequency: 38

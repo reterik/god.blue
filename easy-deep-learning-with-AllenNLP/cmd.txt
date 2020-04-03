@@ -1,0 +1,1 @@
+sudo python3 -m allennlp.run predict https://s3-us-west-2.amazonaws.com/allennlp/models/bidaf-model-2017.09.15-charpad.tar.gz test.json | grep -o -P '.{0,0}best_span_str.{0,1000}' | sed 's/", "/ /g' | sed 's/,/ /g' | sed 's/passage_tokens.*//g' | sed 's/:/,/g' | sed 's/question_tokens//g' | sed 's/best_span_str"//g' >> ai.txt
