@@ -14,4 +14,4 @@ Question Article Answering System QaaS AI 2.0
 2. Install AllenNLP with pip3 install allennlp
 3. Test qaas.php page with question
 
-Also you can run 
+Also you can run php easy-deep-learning-with-AllenNLP/question.php test for unsupervised learning questions.
